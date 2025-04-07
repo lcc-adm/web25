@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>transition page</title>
+    <style>
+     #one {
+        width: 100px;
+        height: 100px;
+        background: pink;
+        border: 3px solid red;
+        transition: background .5s, transform 1s;
+     }
+     #one:hover {
+        background: red;
+        transform: rotate(2000deg) scale(30);
+     }
+     #two {
+        width: 100px;
+        height: 100px;
+        background: pink;
+        border: 3px solid red;
+        transition: border-radius .5s;
+     }
+     #two:hover {
+        border-radius: 50%;
+     }
+     #three {
+        margin-top: 100px;
+        transition: text-shadow .5s, transform .5s;
+     }
+     #three:hover {
+        text-shadow: 0px 10px 10px #888;
+        transform: translateY(-10px);
+     }
+    </style>
+</head>
+
+<body>
+<div id="one"></div>
+<div id="two"></div>
+<div id="three"></div>
+<h1 id="three">this is text</h1>
+</body>
+
+</html>

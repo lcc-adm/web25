@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>boxes page</title>
+    <style>
+        div {
+            background: pink;
+            width: 200px;
+            height: 500px;
+            border: 2px solid #333;
+            margin: 30px
+        }
+#one {
+    position: static;
+}
+#two {9
+    position:relative;
+    left: 100px;
+    top: -100px;
+}
+
+#three {
+    background-color: cadetblue;
+    position: absolute;
+    left: 300px;
+}
+
+#four {
+    background-color: aquamarine;
+    position: fixed;
+    right: 0;
+    bottom:0;
+}
+        #five {
+            background-color: lavender;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one"></div>
+    <div id="five"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="four"></div>
+</body>
+
+</html>
